@@ -14,7 +14,7 @@ Required API Permissions:  User.Read.All
 
 ```
 curl --location --request PATCH "https://graph.microsoft.com/v1.0/users/$USER_ID" \
---header "Authorization: Bearer &ACCESS_TOKEN" \
+--header "Authorization: Bearer $ACCESS_TOKEN" \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "onPremisesExtensionAttributes": {
